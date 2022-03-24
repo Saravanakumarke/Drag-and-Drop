@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+.drag-n-drop {
+  display: grid;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+  font-family: Poppins;
+  grid-template-columns: 25% 25% 25%;
+}
+.dnd-group {
+  border-radius: 5px;
+  min-height: 100vh;
+  color: #000;
+  padding: 0.5rem;
+  border-width: 1px;
+  border-radius: 6px;
+  background-color: #f6f8fa;
+  border-color: hsla(210, 18%, 87%, 1);
+  border: 1px solid #d0d7de !important;
+}
+.dnd-item {
+  padding: 20px;
+  min-height: 100px;
+  background-color: white;
+  border-radius: 5px;
+  color: #282c34;
+  border: 1px solid #d0d7de !important;
+}
+.group-heading {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.group-heading .title {
+  font-size: 1rem;
+  display: flex;
+}
+.group-heading .title .count {
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #24292f;
+  text-align: center;
+  background-color: rgba(175, 184, 193, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+}
+.group-heading .title .name {
+  padding-left: 10px;
+}
+.group-heading .add {
+  font-size: 1rem;
+  cursor: pointer;
+}
+.dnd-item:not(:last-of-type) {
+  margin-bottom: 0.5rem;
+}
+.dnd-item * {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.group-title {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+.btn {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+button {
+  padding: 5px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 180px;
+  background-color: #2da44e;
+  border-color: rgba(27, 31, 36, 0.15);
+  box-shadow: 0 1px 0 rgba(27, 31, 36, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+.textadd {
+  color: #fff;
+  background-color: #2da44e;
+  border-color: rgba(27, 31, 36, 0.15);
+  box-shadow: 0 1px 0 rgba(27, 31, 36, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+.textcancel {
+  color: #24292f;
+  background-color: #f6f8fa;
+  border-color: rgba(27, 31, 36, 0.15);
+  box-shadow: 0 1px 0 rgba(27, 31, 36, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+button[disabled] {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 36, 0.15);
+}
+
+.box {
+  width: 8px;
+  height: 8px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: #2da44e;
+  margin-top: 5px;
+}
+.itemname {
+  font-size: 0.8rem;
+  padding-top: 10px;
+}
+.itemcontainer {
+  display: flex;
+  justify-content: space-between;
+}
+.itemdelete {
+  cursor: pointer;
+}
+.current {
+  background-color: #dedee2;
+}
